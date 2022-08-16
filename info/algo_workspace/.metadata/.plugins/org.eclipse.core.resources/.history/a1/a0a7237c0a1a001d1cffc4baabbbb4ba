@@ -1,0 +1,72 @@
+package swea_ps;
+import java.io.*;
+import java.util.*;
+
+
+public class Solution_d3_4012_요리사_서울_20반_정재영 {
+
+	static int[][] board;
+	static List<Integer> list; 
+	static List<Integer> chosen; 
+	static int ans = 987654321;
+	
+	static void bt(int cnt,int start) {
+		
+		if(chosen.size() == 2) {
+			
+			// 두 개를 선택하는 것이므로
+			int i = chosen.get(0);
+			int j = chosen.get(1);
+			
+			int total_taste = Math.abs(board[i][j] - board[j][i]);
+			
+			ans = Math.min(ans, total_taste);
+			
+			return;
+		}
+		
+		for(int i = start; i < list.size(); i++) {
+			
+			chosen.add(list.get(i));
+			bt(cnt + 1, i + 1);
+			chosen.remove(cnt);
+			
+		}
+		
+		
+		
+	}
+	
+	public static void main(String[] args) throws IOException{
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st;
+		
+		int tt = Integer.parseInt(br.readLine());
+		
+		for(int t = 1; t <= tt; t++) {
+			
+			list = new ArrayList<Integer>();
+			chosen = new ArrayList<Integer>();
+			ans = 987654321;
+			
+			int n = Integer.parseInt(br.readLine());
+			board = new int[n+1][n+1];
+			
+			for(int  y = 0; y <n;y++) {
+				st = new StringTokenizer(br.readLine()," ");
+				list.add(y); // 재료를 전부 리스트에 담는다
+				for(int x = 0; x <n; x++) {
+					
+					board[y][x] = Integer.parseInt(st.nextToken());
+				}
+			}
+			
+			bt(0,0);
+			
+			System.out.println("#" + t +" " +ans);
+		
+		}
+		
+	}
+
+}

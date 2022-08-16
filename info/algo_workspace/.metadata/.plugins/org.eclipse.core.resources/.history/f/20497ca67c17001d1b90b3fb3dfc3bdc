@@ -1,0 +1,12 @@
+package boj;
+
+import java.util.*;
+import java.io.*;
+
+public class p1158 {
+
+	public static void main(String[] args) {
+
+	}
+
+}

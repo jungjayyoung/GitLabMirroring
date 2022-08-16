@@ -1,0 +1,16 @@
+package boj;
+
+import java.util.*;
+import java.io.*;
+
+public class p1158 {
+
+	public static void main(String[] args) throws IOException{
+		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(bf.readLine()," ");
+		
+		
+
+	}
+
+}

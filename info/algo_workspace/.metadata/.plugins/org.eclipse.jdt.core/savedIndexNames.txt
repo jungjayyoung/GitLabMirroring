@@ -1,7 +1,0 @@
-INDEX VERSION 1.131+C:\SSAFY\algo_workspace\.metadata\.plugins\org.eclipse.jdt.core
-526408472.index
-1862971287.index
-1980866262.index
-4288124553.index
-383129395.index
-4011380588.index

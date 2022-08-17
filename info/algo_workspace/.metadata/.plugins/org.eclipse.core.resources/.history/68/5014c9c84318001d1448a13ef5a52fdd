@@ -1,0 +1,34 @@
+package swea_ps;
+
+import java.awt.image.BufferedImageFilter;
+import java.io.*;
+import java.util.*;
+
+
+public class p1861 {
+
+	
+	static int[][] board = new int[1001][1001];
+	
+	
+	
+	
+	public static void main(String[] args) throws IOException{
+
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine()," ");
+		
+		int tc = Integer.parseInt(br.readLine());
+		
+		
+		for(int t = 1; t <= tc; t++) {
+			
+			
+			
+			
+		}
+		
+		
+	}
+
+}

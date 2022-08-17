@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;boj.p17822&apos; to &apos;Main_bj_17822_원판돌리기_서울_20반_정재영&apos;&#x0D;&#x0A;- Original project: &apos;swea_ps&apos;&#x0D;&#x0A;- Original element: &apos;boj.p17822&apos;&#x0D;&#x0A;- Renamed element: &apos;boj.Main_bj_17822_원판돌리기_서울_20반_정재영&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;p17822&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;boj{p17822.java[p17822" matchStrategy="1" name="Main_bj_17822_원판돌리기_서울_20반_정재영" qualified="false" references="true" similarDeclarations="false" stamp="1660615453037" textual="false" version="1.0"/>
+</session>

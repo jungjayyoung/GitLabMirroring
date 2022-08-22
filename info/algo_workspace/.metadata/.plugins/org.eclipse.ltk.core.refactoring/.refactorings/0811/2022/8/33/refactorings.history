@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename type &apos;PermutationTest2&apos; to &apos;PermutationBitMaskingTest2&apos;&#x0D;&#x0A;- Original project: &apos;0811&apos;&#x0D;&#x0A;- Original element: &apos;PermutationTest2&apos;&#x0D;&#x0A;- Renamed element: &apos;PermutationBitMaskingTest2&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;PermutationTest2&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{PermutationTest2.java[PermutationTest2" matchStrategy="1" name="PermutationBitMaskingTest2" qualified="false" references="true" similarDeclarations="false" stamp="1660199424346" textual="false" version="1.0"/>
-</session>

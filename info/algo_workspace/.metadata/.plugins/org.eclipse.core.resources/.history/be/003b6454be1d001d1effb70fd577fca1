@@ -1,0 +1,12 @@
+package boj;
+
+import java.io.*;
+import java.util.*;
+
+public class p17779 {
+
+	public static void main(String[] args) throws IOException{
+
+	}
+
+}

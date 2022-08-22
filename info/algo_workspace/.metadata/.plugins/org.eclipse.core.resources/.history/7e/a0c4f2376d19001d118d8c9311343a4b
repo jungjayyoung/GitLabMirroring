@@ -1,0 +1,13 @@
+package boj;
+import java.util.*;
+import java.io.*;
+
+
+public class p12015 {
+
+	public static void main(String[] args) {
+
+		
+	}
+
+}

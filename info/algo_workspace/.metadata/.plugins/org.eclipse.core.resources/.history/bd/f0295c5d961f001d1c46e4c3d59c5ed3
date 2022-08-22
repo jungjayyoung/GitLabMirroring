@@ -1,0 +1,47 @@
+package swea_ps;
+
+import java.io.*;
+import java.util.*;
+
+public class p3234 {
+	
+	static boolean[] visited;
+	static int[] choo;
+	static int n;
+
+	public static void main(String[] args) throws IOException{
+
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st;
+		
+		int tt = Integer.parseInt(br.readLine());
+		
+		for(int t = 1; t <= tt; t++) {
+			
+			
+			n = Integer.parseInt(br.readLine());
+			visited = new boolean[n+1];
+				
+		}
+		
+	}
+	
+	static void subset(int cnt) {
+		
+		
+		if(cnt == n) {
+			
+			
+			return;
+		}
+		
+		visited[cnt] = true;
+		subset(cnt + 1);
+		visited[cnt] = false;
+		subset(cnt + 1);
+		
+		
+		
+	}
+
+}

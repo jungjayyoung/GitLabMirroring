@@ -1,0 +1,63 @@
+
+
+import java.util.*;
+import java.io.*;
+
+
+public class GraphListNode {
+	
+	static class Node{
+		int to;
+		Node next;
+		public Node(int to, Node next) {
+			this.to = to;
+			this.next = next;
+		}
+		
+		@Override
+		public String toString() {
+			return (char)(to+'A') + "("+to + ")" + next;
+		}
+		
+	}
+	
+	static Node[] g;
+	static int N;
+	static boolean[] v;
+
+	public static void main(String[] args) throws IOException{
+		Scanner sc = new Scanner(System.in);
+		
+		N = sc.nextInt();
+		int E = sc.nextInt();
+		g = new Node[N];
+		v = new boolean[N];
+		
+		for(int i = 0; i < E; i++) {// 간선정보에 해당하는 부분만 덮어씀
+			int from = sc.nextInt();
+			int to = sc.nextInt();
+			g[from] = new Node(to, g[from]); //무향
+			g[to] = new Node(from, g[to]);	
+		}
+		
+		dfs(0);
+		
+		sc.close();
+	}
+
+	private static void dfs(int cur) {
+		
+		v[cur] = true;
+		System.out.print((char)(cur+ 'A'));
+		
+		// 현 정점의 인접정점들 큐에 넣어서 차후 탐색하도록 만들기
+		for (Node temp = g[cur]; temp != null; temp = temp.next) {
+			if(!v[temp.to]) {
+				dfs(temp.to);
+			}
+		}
+		
+		
+	}
+
+}

@@ -1,0 +1,71 @@
+package swea_ps;
+import java.util.*;
+import java.io.*;
+
+public class p1233 {
+	
+	class Node{
+		
+		char data;
+		Node left;
+		Node right;
+		
+		Node(char data) {
+			
+			this.data = data;
+			left = null;
+			right = null;
+		}
+	
+	}
+	
+	class Tree{
+		
+		public Node root;
+		
+		public createNode(char data, char leftData, char rightData) {
+			
+			if(root == null) {
+				root = new Node(data);
+				root.left = new Node(leftData);
+				root.right = new Node(rightData);
+			}
+			
+		}
+		
+		
+	}
+
+	
+	
+	public static void main(String[] args) throws IOException{
+
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st; 
+		
+		int [] node = new int[201];
+		
+		
+		
+		for(int t = 1; t <= 10; t++) {
+			int n = Integer.parseInt(br.readLine());
+			
+			
+			st = new StringTokenizer(br.readLine()," ");
+			for(int i = 0; i <n; i++) {
+				int nd = Integer.parseInt(st.nextToken());
+				
+				
+			}
+			
+			
+			
+			
+			
+		}
+		
+		
+		
+	}
+
+}

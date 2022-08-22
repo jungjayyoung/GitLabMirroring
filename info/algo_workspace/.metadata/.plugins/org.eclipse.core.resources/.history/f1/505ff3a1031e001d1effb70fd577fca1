@@ -1,0 +1,42 @@
+package boj;
+
+import java.io.*;
+import java.util.*;
+
+public class p1541 {
+
+	public static void main(String[] args) throws IOException{
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st;
+		
+		String s = br.readLine();
+		st =new StringTokenizer(s,"+|-");
+		List<Integer> arr = new ArrayList<Integer>();
+		Stack<Character> ss = new Stack<>();
+		Stack<Integer> num = new Stack<>();
+		
+		
+		while(st.hasMoreElements()) {
+			arr.add(Integer.parseInt(st.nextToken()));
+		}
+		int sum = arr.get(0);
+		int idx = 1;
+		for(int i = 0; i <s.length();i++) {
+			if(s.charAt(i) == '+' || s.charAt(i) == '-') {
+				if(s.charAt(i) == '+') {
+					sum += arr.get(idx++);
+				}else if(s.charAt(i) == '-') {
+					ss.add(s.charAt(i));
+				}
+				
+			}
+		}
+		
+		
+		
+		
+		
+		
+	}
+
+}

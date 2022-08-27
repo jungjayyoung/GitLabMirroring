@@ -1,0 +1,140 @@
+package swea_ps;
+
+import java.io.*;
+import java.util.*;
+
+public class p5644_무선충전 {
+	static int m, a;
+	static int dx[] = {0,0,1,0,-1};
+	static int dy[] = {0,-1,0,1, 0};
+	static int a_move[];
+	static int b_move[];
+	static int board[][];
+	static List<int[]> charger;
+	static List<Integer>[][] charger_list;
+	static boolean visited[][];
+	static int lim;
+	
+	
+	
+	
+
+	public static void main(String[] args) throws IOException{
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st;
+		
+		int tc = Integer.parseInt(br.readLine());
+		
+		for(int t = 1; t <=tc; t++) {
+			
+			st = new StringTokenizer(br.readLine()," ");
+			
+			m = Integer.parseInt(st.nextToken());
+			a = Integer.parseInt(st.nextToken());
+			
+			st = new StringTokenizer(br.readLine()," ");
+			
+			a_move = new int[20];
+			b_move = new int[20];
+			for(int i=0; i <m;i++) {
+				a_move[i] = Integer.parseInt(st.nextToken());
+			}
+			
+			st = new StringTokenizer(br.readLine()," ");
+			for(int i=0; i <m;i++) {
+				b_move[i] = Integer.parseInt(st.nextToken());
+			}
+			
+			
+			board = new int[11][11];
+			charger = new ArrayList<int[]>();
+			
+			for(List<Integer> a[] : charger_list) {
+				
+				for(List<Integer> b : a) {
+					b = new ArrayList<>();
+				}
+			}
+			
+			
+			for(int i = 0; i < a; i++) {
+				st = new StringTokenizer(br.readLine()," ");
+				int x = Integer.parseInt(st.nextToken());
+				int y = Integer.parseInt(st.nextToken());
+				int dist = Integer.parseInt(st.nextToken());
+				int power = Integer.parseInt(st.nextToken());
+				
+				charger.add(new int[] {x,y,dist,power});
+		
+			}
+			
+			int a_x = 1;
+			int a_y = 1;
+			int b_x = 10;
+			int b_y = 10;
+			int a_sum = 0;
+			int b_sum = 0;
+			
+			int apower = 0;
+			int bpower = 0;
+			List<Integer> a = new ArrayList<Integer>(); // 여기에 같은 위치의 충전기 리스트가 저장
+			boolean check1 = false;
+			boolean check2 = false;
+			for(int i = 0; i < charger.size(); i++) {
+				
+				int cur[] = charger.get(i);
+				int c_x = cur[0];
+				int c_y = cur[1];
+				int c_dist = cur[2];
+				int c_power = cur[3];
+				check1 = false;
+				check2 = false;
+				
+				
+				if((Math.abs(c_x - a_x) + Math.abs(c_y - a_y)) <= c_dist) {
+					apower = Math.max(apower, c_power);
+					check1 = true;
+				}
+				
+				if((Math.abs(c_x - b_x) + Math.abs(c_y - b_y)) <= c_dist) {
+					bpower = Math.max(bpower, c_power);
+					check2 = true;
+				}
+				
+				if(check1 && check2) {
+					a.add(apower);
+				}
+				
+				
+			}
+			
+			Collections.sort(a,Collections.reverseOrder());
+			
+			if(apower == bpower) {
+				
+			}else {
+				
+			}
+			
+		
+			
+			
+			// 초기 위치부터 충전이 가능하다.
+			for(int i = 0; i < m; i++) {
+				
+			
+				
+				
+				
+			}
+					
+			
+			
+			
+			
+		}
+		
+	}
+
+}

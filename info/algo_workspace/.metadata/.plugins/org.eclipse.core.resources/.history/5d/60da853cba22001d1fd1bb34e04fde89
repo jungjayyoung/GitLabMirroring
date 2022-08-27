@@ -1,0 +1,28 @@
+package swea_ps;
+import java.io.*;
+import java.util.*;
+
+public class p3124 {
+	static int v,e;
+
+	public static void main(String[] args) throws IOException{
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st;
+		
+		for(int t = 1; t <=10; t++) {
+			
+			st =new StringTokenizer(br.readLine()," ");
+			v = Integer.parseInt(st.nextToken());
+			e = Integer.parseInt(st.nextToken());
+			
+			
+			
+			
+			
+			
+		}
+
+	}
+
+}

@@ -1,0 +1,43 @@
+package swea_ps;
+
+import java.io.*;
+import java.util.*;
+public class p8382 {
+
+	static int dx[] = {-1,0,1,0};
+	static int dy[] = {0,1,0,-1};
+	static boolean visited[][][]; // 방문체크를 가로로 했는지 세로로 했는지도 체크해야 한다.
+	static int x1,y1,x2,y2;
+	
+	static void bfs() {
+		
+		
+		
+		
+		
+	}
+	
+	public static void main(String[] args) throws IOException{
+
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st;
+		
+		int tt = Integer.parseInt(br.readLine());
+		
+		for(int t = 1; t <= tt; t++) {
+			
+			st = new StringTokenizer(br.readLine()," ");
+			
+			x1 = Integer.parseInt(st.nextToken());
+			y1 = Integer.parseInt(st.nextToken());
+			x2 = Integer.parseInt(st.nextToken());
+			y2 = Integer.parseInt(st.nextToken());
+			
+			visited = new boolean[202][202][2];
+			
+			
+			
+		}
+	}
+
+}

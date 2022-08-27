@@ -1,0 +1,31 @@
+package swea_ps;
+
+import java.io.*;
+import java.util.*;
+
+
+
+public class p3289 {
+	
+	static int n,m;
+	
+	static int parent = new int[]
+
+	public static void main(String[] args) throws IOException{
+
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st;
+		
+		int tt = Integer.parseInt(br.readLine());
+		
+		for(int t = 1; t <=tt; t++) {
+			
+			
+			
+			
+			
+		}
+		
+	}
+
+}
